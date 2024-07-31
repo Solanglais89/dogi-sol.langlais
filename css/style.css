@@ -1,0 +1,254 @@
+*{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/*header*/
+.header{
+    display: flex;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: blue !important;
+    font-weight: bold !important; 
+}
+.cont-logo{
+    width: 100px;
+    margin-top: 10px;
+}
+.cont-logo img{
+    width: 100%;
+}
+
+.bg-banner{
+    height: 300px;
+    background-image: url("../assets/imgbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.inicio{
+    color: azure;
+    font-size: 48px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+/*main*/
+.info-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulo{
+   padding-left: 20px;
+   padding-top: 50px;
+}
+.texto{
+    padding: 20px;
+}
+.guarderia-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg-guarderia{
+    background-color: #CAA2A1;
+    color: aliceblue;
+    flex: 1;
+    padding: 20px;
+}
+.contenedor{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: top;
+    height: 400px;
+}
+.contenedor-guarderia {
+    background-image: url("../assets/guarderiaph.png");
+}
+.contenedor-veterinaria{
+    background-image: url("../assets/veterinariaph.png");
+  
+}
+.contenedor-adiestramiento{
+    background-image: url("../assets/adiestradorph.png");
+}
+.ph-contenedor img{
+   max-width: 100%;
+   height: auto;
+}
+.veterinaria-contenedor{
+    display: flex;
+    flex-direction: wrap;
+}
+.bg-veterinaria{
+    background-color: #2717E5;
+    color: aliceblue;
+    flex: 1;
+    padding: 20px;   
+}
+.bg-adiestramiento{
+    background-color: #719444;
+    color: aliceblue;
+    flex: 1;
+    padding: 20px;
+}
+.formulario {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Añade un poco de relleno al contenedor */
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 600px; 
+    margin: auto; 
+}
+.formulario label,
+.formulario input,
+.formulario select,
+.formulario textarea,
+.formulario input[type="submit"] {
+    margin-bottom: 10px; /* Espaciado entre los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Añade algo de relleno interno */
+    border: 1px solid #ccc; /* Añade un borde gris claro */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño del elemento */
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #0a958b; /* Color de fondo cuando se hace hover */
+}
+.text-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+/*footer*/
+.foot{
+    background-color:#E56117 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-logo{
+    margin-left: 30px;
+}
+footer .social a{
+    color: #ffffff;
+    margin-right: 30px;
+}
+/*Nuestro equipo*/
+h1{
+    font-weight: lighter;
+    margin: 30px;
+}
+.equipo-completo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 100px 250px 100px 250px;
+}
+.banner-equipo{
+    background-color: #F4F4F4;
+    color: #2717E5;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+}
+.ph-equipo{
+    width: 300px;   
+}
+.ph-equipo img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.ph-equipo img:hover {
+    transform: scale(1.1) translateY(-20px); 
+}
+.equipo-name{
+    color: #2717E5;
+    text-align: center;
+}
+.banner-final{
+    font-size: 24px;
+    color: #2717E5;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .equipo-completo {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ph-equipo {
+        width: 90%;
+    }
+    .banner-equipo, .banner-final {
+        font-size: 20px;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .equipo-completo {
+        margin: 10px;
+        gap: 10px;
+    }
+    .banner-equipo, .banner-final {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .ph-equipo {
+        width: 100%;
+    }
+}
+
+
+/*Contactanos*/
+.contacto-text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px
+}
+.visitanos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2717E5;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  
+  @media (max-width: 768px) {
+    .visitanos-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.visitanos-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 190px;
+    color: #ffffff;
+}
+
+.mapa-container{
+    width: 100%; /* Ajusta el ancho del mapa */
+}
+
