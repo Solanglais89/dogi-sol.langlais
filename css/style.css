@@ -99,8 +99,8 @@
 }
 .formulario {
     display: flex;
-    justify-content: center; /* Centra el formulario horizontalmente */
-    padding: 20px; /* Añade un poco de relleno al contenedor */
+    justify-content: center; 
+    padding: 20px; 
 }
 .formulario form {
     display: flex;
@@ -114,15 +114,15 @@
 .formulario select,
 .formulario textarea,
 .formulario input[type="submit"] {
-    margin-bottom: 10px; /* Espaciado entre los elementos */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px; /* Añade algo de relleno interno */
-    border: 1px solid #ccc; /* Añade un borde gris claro */
-    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño del elemento */
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
     transition: background-color 0.3s ease;
 }
 input[type="submit"]:hover {
-    background-color: #0a958b; /* Color de fondo cuando se hace hover */
+    background-color: #0a958b; 
 }
 .text-form{
     display: flex;
@@ -249,6 +249,6 @@ h1{
 }
 
 .mapa-container{
-    width: 100%; /* Ajusta el ancho del mapa */
+    width: 100%; 
 }
 
