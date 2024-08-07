@@ -186,6 +186,40 @@ h1{
     margin-top: 20px;
     padding: 20px;
 }
+
+
+/*Contactanos*/
+.contacto-text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px
+}
+.visitanos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2717E5;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  
+
+
+.visitanos-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 190px;
+    color: #ffffff;
+}
+
+.mapa-container{
+    width: 100%; 
+}
+@media (max-width: 768px) {
+    .visitanos-container {
+      grid-template-columns: 1fr;
+    }
+  }
 @media (max-width: 768px) {
     .equipo-completo {
         margin: 20px;
@@ -218,37 +252,3 @@ h1{
         width: 100%;
     }
 }
-
-
-/*Contactanos*/
-.contacto-text{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px
-}
-.visitanos-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #2717E5;
-    justify-items: stretch;
-    align-items: stretch;
-  }
-  
-  @media (max-width: 768px) {
-    .visitanos-container {
-      grid-template-columns: 1fr;
-    }
-  }
-
-.visitanos-text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 190px;
-    color: #ffffff;
-}
-
-.mapa-container{
-    width: 100%; 
-}
-

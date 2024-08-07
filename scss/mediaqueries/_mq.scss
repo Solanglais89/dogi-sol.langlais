@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .visitanos-container {
+      grid-template-columns: 1fr;
+    }
+  }
+@media (max-width: 768px) {
+    .equipo-completo {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ph-equipo {
+        width: 90%;
+    }
+    .banner-equipo, .banner-final {
+        font-size: 20px;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .equipo-completo {
+        margin: 10px;
+        gap: 10px;
+    }
+    .banner-equipo, .banner-final {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .ph-equipo {
+        width: 100%;
+    }
+}
