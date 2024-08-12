@@ -1,0 +1,43 @@
+.contenedor {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: top;
+    height: 400px;
+  
+    &.contenedor-guarderia {
+      background-image: url("../assets/guarderiaph.png");
+    }
+  
+    &.contenedor-veterinaria {
+      background-image: url("../assets/veterinariaph.png");
+    }
+  
+    &.contenedor-adiestramiento {
+      background-image: url("../assets/adiestradorph.png");
+    }
+  }
+  .ph-contenedor {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .veterinaria-contenedor {
+    display: flex;
+    flex-direction: wrap;
+  
+    .bg-veterinaria, .bg-adiestramiento {
+      color: $font-color;
+      flex: 1;
+      padding: 20px;
+  
+      &.bg-veterinaria {
+        background-color: $primary-color;
+      }
+  
+      &.bg-adiestramiento {
+        background-color: #719444;
+      }
+    }
+  }

@@ -1,0 +1,32 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+  
+      label, input, select, textarea, input[type="submit"] {
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease;
+      }
+  
+      input[type="submit"]:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+  
+  .text-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }

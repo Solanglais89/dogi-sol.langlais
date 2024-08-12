@@ -1,0 +1,25 @@
+.contacto-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .visitanos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $primary-color;
+    justify-items: stretch;
+    align-items: stretch;
+  
+    .visitanos-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 190px;
+      color: #ffffff;
+    }
+  }
+  
+  .mapa-container {
+    width: 100%;
+  }

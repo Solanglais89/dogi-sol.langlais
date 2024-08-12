@@ -8,19 +8,16 @@
 .header {
   display: flex;
 }
-
-.navbar-nav .nav-item .nav-link {
-  color: blue !important;
-  font-weight: bold !important;
-}
-
-.cont-logo {
+.header .cont-logo {
   width: 100px;
   margin-top: 10px;
 }
-
-.cont-logo img {
+.header .cont-logo img {
   width: 100%;
+}
+.header .navbar-nav .nav-item .nav-link {
+  color: blue !important;
+  font-weight: bold !important;
 }
 
 .bg-banner {
@@ -32,13 +29,156 @@
   display: flex;
   justify-content: center;
 }
-
-.inicio {
+.bg-banner .inicio {
   color: azure;
   font-size: 48px;
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
+}
+
+.contenedor {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+  height: 400px;
+}
+.contenedor.contenedor-guarderia {
+  background-image: url("../assets/guarderiaph.png");
+}
+.contenedor.contenedor-veterinaria {
+  background-image: url("../assets/veterinariaph.png");
+}
+.contenedor.contenedor-adiestramiento {
+  background-image: url("../assets/adiestradorph.png");
+}
+
+.ph-contenedor img {
+  max-width: 100%;
+  height: auto;
+}
+
+.veterinaria-contenedor {
+  display: flex;
+  flex-direction: wrap;
+}
+.veterinaria-contenedor .bg-veterinaria, .veterinaria-contenedor .bg-adiestramiento {
+  color: aliceblue;
+  flex: 1;
+  padding: 20px;
+}
+.veterinaria-contenedor .bg-veterinaria.bg-veterinaria, .veterinaria-contenedor .bg-adiestramiento.bg-veterinaria {
+  background-color: #2717E5;
+}
+.veterinaria-contenedor .bg-veterinaria.bg-adiestramiento, .veterinaria-contenedor .bg-adiestramiento.bg-adiestramiento {
+  background-color: #719444;
+}
+
+h1 {
+  font-weight: lighter;
+  margin: 30px;
+}
+
+.equipo-completo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 100px 250px;
+}
+.equipo-completo .ph-equipo {
+  width: 300px;
+}
+.equipo-completo .ph-equipo img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.equipo-completo .ph-equipo img:hover {
+  transform: scale(1.1) translateY(-20px);
+}
+.equipo-completo .ph-equipo .equipo-name {
+  color: #2717E5;
+  text-align: center;
+}
+.equipo-completo .banner-equipo, .equipo-completo .banner-final {
+  background-color: #F4F4F4;
+  color: #2717E5;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.formulario form label, .formulario form input, .formulario form select, .formulario form textarea, .formulario form input[type=submit] {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+.formulario form input[type=submit]:hover {
+  background-color: #0a958b;
+}
+
+.text-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.foot {
+  background-color: #E56117;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot .cont-logo {
+  margin-left: 30px;
+}
+.foot .social a {
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.contacto-text {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.visitanos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #2717E5;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.visitanos-container .visitanos-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 190px;
+  color: #ffffff;
+}
+
+.mapa-container {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
