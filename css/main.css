@@ -43,14 +43,30 @@
   background-size: cover;
   background-position-y: top;
   height: 400px;
+  background-image: url("../assets/guarderiaph.png");
 }
 .contenedor.contenedor-guarderia {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+  height: 400px;
   background-image: url("../assets/guarderiaph.png");
 }
 .contenedor.contenedor-veterinaria {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+  height: 400px;
   background-image: url("../assets/veterinariaph.png");
 }
 .contenedor.contenedor-adiestramiento {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+  height: 400px;
   background-image: url("../assets/adiestradorph.png");
 }
 
@@ -63,15 +79,18 @@
   display: flex;
   flex-direction: wrap;
 }
-.veterinaria-contenedor .bg-veterinaria, .veterinaria-contenedor .bg-adiestramiento {
+.veterinaria-contenedor .bg-veterinaria,
+.veterinaria-contenedor .bg-adiestramiento {
   color: aliceblue;
   flex: 1;
   padding: 20px;
 }
-.veterinaria-contenedor .bg-veterinaria.bg-veterinaria, .veterinaria-contenedor .bg-adiestramiento.bg-veterinaria {
+.veterinaria-contenedor .bg-veterinaria.bg-veterinaria,
+.veterinaria-contenedor .bg-adiestramiento.bg-veterinaria {
   background-color: #2717E5;
 }
-.veterinaria-contenedor .bg-veterinaria.bg-adiestramiento, .veterinaria-contenedor .bg-adiestramiento.bg-adiestramiento {
+.veterinaria-contenedor .bg-veterinaria.bg-adiestramiento,
+.veterinaria-contenedor .bg-adiestramiento.bg-adiestramiento {
   background-color: #719444;
 }
 
