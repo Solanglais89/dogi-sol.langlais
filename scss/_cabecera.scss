@@ -1,21 +1,23 @@
-.header {
-    display: flex;
-  
+$logo-width: 100px;
+
+header {
+
+  .navbar {
     .cont-logo {
-      width: 100px;
+      width: $logo-width;
       margin-top: 10px;
-  
+
       img {
         width: 100%;
       }
     }
-  
     .navbar-nav {
       .nav-item {
         .nav-link {
-          color: blue !important;
-          font-weight: bold !important;
+          color: $blue;
+          font-weight: bold;
         }
       }
     }
   }
+}

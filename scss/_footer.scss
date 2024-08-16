@@ -1,18 +1,23 @@
-.foot {
-    background-color: $highlight-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    .cont-logo {
-      margin-left: 30px;
-    }
-  
-    .social {
-      a {
-        color: #ffffff;
-        margin-right: 30px;
-      }
+footer {
+  background-color: $footer-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-logo {
+    width: $logo-width;
+    margin-top: 10px;
+    margin-left: 30px;
+
+    img {
+      width: 100%;
     }
   }
-  
+
+  .social {
+    a {
+      color: #ffffff;
+      margin-right: 30px;
+    }
+  }
+}

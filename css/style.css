@@ -6,13 +6,13 @@
 }
 
 /*header*/
-.header{
+header{
     display: flex;
 }
 
-.navbar-nav .nav-item .nav-link {
-    color: blue !important;
-    font-weight: bold !important; 
+.navbar .navbar-nav .nav-item .nav-link {
+    color: blue;
+    font-weight: bold;
 }
 .cont-logo{
     width: 100px;

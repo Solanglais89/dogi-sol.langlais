@@ -1,14 +1,8 @@
-//  colores
-$primary-color: #2717E5;
-$adiestramiento-color: #719444;
-$guarderia-color: #CAA2A1;
-$font-color: aliceblue;
-
-// imagenes background 
+// imagenes background
 $background-images: (
   "guarderia": "../assets/guarderiaph.png",
   "veterinaria": "../assets/veterinariaph.png",
-  "adiestramiento": "../assets/adiestradorph.png"
+  "adiestramiento": "../assets/adiestradorph.png",
 );
 
 // Mixin contenedor clases
@@ -22,7 +16,22 @@ $background-images: (
 }
 
 .contenedor {
-  @include contenedor("guarderia");
+  display: flex;
+  flex-direction: column;
+  color: $font-color;
+  flex: 1;
+
+  &.bg-veterinaria {
+    background-color: $blue;
+  }
+
+  &.bg-adiestramiento {
+    background-color: $green;
+  }
+  
+  &.bg-guarderia {
+    background-color: $pink;
+  }
 
   &.contenedor-guarderia {
     @include contenedor("guarderia");
@@ -41,25 +50,5 @@ $background-images: (
   img {
     max-width: 100%;
     height: auto;
-  }
-}
-
-.veterinaria-contenedor {
-  display: flex;
-  flex-direction: wrap;
-
-  .bg-veterinaria,
-  .bg-adiestramiento {
-    color: $font-color;
-    flex: 1;
-    padding: 20px;
-
-    &.bg-veterinaria {
-      background-color: $primary-color;
-    }
-
-    &.bg-adiestramiento {
-      background-color: $adiestramiento-color;
-    }
   }
 }
