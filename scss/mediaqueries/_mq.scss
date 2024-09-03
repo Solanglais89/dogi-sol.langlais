@@ -6,6 +6,7 @@
 @media (max-width: 768px) {
     .equipo-completo {
         margin: 20px;
+        display: flex; /* Asegura que sea flex */
         flex-direction: column;
         align-items: center;
     }
@@ -18,14 +19,15 @@
         padding: 10px;
     }
 }
+
 @media (max-width: 480px) {
-    h1 {
+    .equipo-completo h1 { 
         font-size: 18px;
         margin: 20px;
     }
     .equipo-completo {
         margin: 10px;
-        gap: 10px;
+        gap: 10px; 
     }
     .banner-equipo, .banner-final {
         font-size: 18px;

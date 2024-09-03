@@ -198,6 +198,7 @@ footer .social a {
 @media (max-width: 768px) {
   .equipo-completo {
     margin: 20px;
+    display: flex; /* Asegura que sea flex */
     flex-direction: column;
     align-items: center;
   }
@@ -211,7 +212,7 @@ footer .social a {
   }
 }
 @media (max-width: 480px) {
-  h1 {
+  .equipo-completo h1 {
     font-size: 18px;
     margin: 20px;
   }
