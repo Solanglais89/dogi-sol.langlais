@@ -38,7 +38,6 @@ header .navbar .navbar-nav .nav-item .nav-link {
   display: flex;
   flex-direction: column;
   color: aliceblue;
-  flex: 1;
 }
 .contenedor.bg-veterinaria {
   background-color: #2717E5;
